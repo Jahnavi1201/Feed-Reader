@@ -55,24 +55,24 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 
 2. Then, opened `index.html` and reviewed the functionality of the application in a browser.
 
-_View of "jasmine_html-reporter" before writing the tests_
+    _View of "jasmine_html-reporter" before writing the tests_
 
-![screenshot](./images/before.png)
+    ![screenshot](./images/before.png)
 
-1. Then, I have read all code comments in "app.js" and checked out `style.css` to know how is styling applied to the application.
+3. Then, I have read all code comments in "app.js" and checked out `style.css` to know how is styling applied to the application.
 
-2. Next, explored the Jasmine spec file in `feedreader.js` in which all the tests will be written.
+4. Next, explored the Jasmine spec file in `feedreader.js` in which all the tests will be written.
 
-3. Edited the `allFeeds` variable in `app.js` to make the provided test fail. I have saw how Jasmine visualizes this failure in this application. Returned the `allFeeds` variable to a passing state after reviewing the failed test.
+5. Edited the `allFeeds` variable in `app.js` to make the provided test fail. I have saw how Jasmine visualizes this failure in this application. Returned the `allFeeds` variable to a passing state after reviewing the failed test.
 
-4. Four test suites are written:
+6. Four test suites are written:
 
   - RSS Feeds
   - The menu
   - Initial Entries
   - New Feed Selection
 
-5. In first test suite, that is, `RSS Feeds`, two specs are written: _Already, they have given a spec named "are defined"._
+7. In first test suite, that is, `RSS Feeds`, two specs are written: _Already, they have given a spec named "are defined"._
 
   - **are defined**: It tests to make sure that the `allFeeds` variable has been defined and that it is not empty.
 
@@ -80,25 +80,26 @@ _View of "jasmine_html-reporter" before writing the tests_
 
   - **name defined**: It is our third test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
 
-6. In second test suite, that is, `The menu`, two specs are written:
+8. In second test suite, that is, `The menu`, two specs are written:
 
-  - **menu hidden by default**: It is the first test of menu that ensures the menu element is hidden by default.
+   - **menu hidden by default**: It is the first test of menu that ensures the menu element is hidden by default.
 
-  - **menu visibility**: It is the second test of menu that ensures the menu changes visibility when the menu icon is clicked. This test requires two expectations-does the menu display when clicked and does it hide when clicked again.
+   - **menu visibility**: It is the second test of menu that ensures the menu changes visibility when the menu icon is clicked. This test requires two expectations-does the menu display when clicked and does it hide when clicked again.
 
-7. In third test suite, that is, `Initial Entries`, one spec is written:
+9. In third test suite, that is, `Initial Entries`, one spec is written:
 
-- **a single .entry element within the .feed container**: It is a test that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container.
+   - **a single .entry element within the .feed container**: It is a test that ensures when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container.
 
-1. In fourth test suite, that is, `New Feed Selection`, one spec is written:
+10. In fourth test suite, that is, `New Feed Selection`, one spec is written:
 
-  - **when a new feed is loaded by the loadFeed function, the content actually changes**: It is a test that ensures when a new feed is loaded by the loadFeed function, the content actually changes.
+    - **when a new feed is loaded by the loadFeed function, the content actually changes**: It is a test that ensures when a new feed is loaded by the loadFeed function, the content actually changes.
 
-2. After writing all the tests, I have reloaded the **index.html** file and ensured that there are no failures. _View of "jasmine_html-reporter" division after passing all the tests_
+11. After writing all the tests, I have reloaded the **index.html** file and ensured that there are no failures.
+   _View of "jasmine_html-reporter" division after passing all the tests_
 
-  ![screenshot](./images/after.png)
+   ![screenshot](./images/after.png)
 
-3. I have ensured the following also:
+12. I have ensured the following also:
 
   - No test should be dependent on the results of another.
   - Callbacks should be used to ensure that feeds are loaded before they are tested.
