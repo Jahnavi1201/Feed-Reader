@@ -55,7 +55,7 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 
 2. Then, opened `index.html` and reviewed the functionality of the application in a browser.
 
-    _View of "jasmine_html-reporter" before writing the tests_
+    _View of "jasmine_html-reporter" before writing the tests other than given by developer:_
 
     ![screenshot](./images/before.png)
 
@@ -72,13 +72,14 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
   - Initial Entries
   - New Feed Selection
 
-7. In first test suite, that is, `RSS Feeds`, two specs are written: _Already, they have given a spec named "are defined"._
+7. In first test suite, that is, `RSS Feeds`, two specs are written:
+   _Already, they have given a spec named "are defined"._
 
-  - **are defined**: It tests to make sure that the `allFeeds` variable has been defined and that it is not empty.
+   - **are defined**: It tests to make sure that the `allFeeds` variable has been defined and that it is not empty.
 
-  - **url defined**: It is a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
+   - **url defined**: It is a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
 
-  - **name defined**: It is our third test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
+   - **name defined**: It is our third test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
 
 8. In second test suite, that is, `The menu`, two specs are written:
 
@@ -95,9 +96,10 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
     - **when a new feed is loaded by the loadFeed function, the content actually changes**: It is a test that ensures when a new feed is loaded by the loadFeed function, the content actually changes.
 
 11. After writing all the tests, I have reloaded the **index.html** file and ensured that there are no failures.
-   _View of "jasmine_html-reporter" division after passing all the tests_
 
-   ![screenshot](./images/after.png)
+   _View of "jasmine_html-reporter" division after passing all the tests:_
+
+    ![screenshot](./images/after.png)
 
 12. I have ensured the following also:
 
@@ -109,7 +111,7 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 
 ## How to run this Project?
 
-First, unzip the downloaded project folder of the application which is going to be tested. Then, open the `index.html` file in a browser to observe and analyze the project. First, we will get 1 spec,0 failures as they have already written a test suite with ona spec. Then we should write tests for each test suite which are specified in feedreader.js. Then, observe the output by reloading the index.html whether the tests are passed or not. After all the tests are passed, then the project is said to be tested successfully using **jasmine framework**.
+First, unzip the downloaded project folder of the application which is going to be tested. Then, open the `index.html` file in a browser to observe and analyze the project. First, we will get 1 spec,0 failures as they have already written a test suite with ona spec. Then we should write tests for each test suite which are specified in feedreader.js. Then, observe the output by reloading the index.html whether the tests are passed or not. After all the tests are passed, then the project is said to be tested successfully using **Jasmine framework**.
 
 --------------------------------------------------------------------------------
 
