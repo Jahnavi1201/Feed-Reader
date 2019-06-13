@@ -61,29 +61,24 @@ $(function() {
       function is called and completes its work, there is at least
       a single .entry element within the .feed container.*/
     it('a single .entry element within the .feed container', function() {
-      expect($(".feed").length == 0).toBe(false);
+      expect($(".feed .entry").length).toBeGreaterThan(0);
     });
   });
   /* The following is our fourth test suite-it consists of tests related to new feeds*/
   describe('New Feed Selection', function() {
-    /* The variables required are declared here*/
+    /* The variable required is declared here*/
     var before;
-    var after;
     /* The following is "beforeEach"-it executes before the test is performed */
     beforeEach(function(done) {
-      loadFeed(1, function() {
+      loadFeed(0, function() {
         before = $(".feed").html();
-        done();
-      });
-      loadFeed(2, function() {
-        after = $(".feed").html();
-        done();
+        loadFeed(1, done);
       });
     });
     /* The following is a test that ensures when a new feed is loaded
        by the loadFeed function,the content actually changes*/
     it('when a new feed is loaded by the loadFeed function,the content actually changes', function() {
-      expect(before).not.toBe(after);
+      expect($(".feed").html()).not.toBe(before);
     });
   });
 }());
