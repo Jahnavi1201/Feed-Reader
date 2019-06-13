@@ -98,8 +98,8 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 11. After writing all the tests, I have reloaded the **index.html** file and ensured that there are no failures.
 
    _View of "jasmine_html-reporter" division after passing all the tests:_
-
-    ![screenshot](./images/after.png)
+      
+  ![screenshot](./images/after.png)
 
 12. I have ensured the following also:
 
